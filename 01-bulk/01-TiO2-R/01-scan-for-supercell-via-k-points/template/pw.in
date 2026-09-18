@@ -1,0 +1,30 @@
+&control
+   calculation = 'scf'
+   pseudo_dir  = './'
+   disk_io     = "none"
+   tprnfor = .true.
+/
+&system
+   ibrav     = 0
+   nat       = 6 
+   ntyp      = 2
+   ecutwfc   = <ecutwfc> 
+/
+&electrons
+/
+CELL_PARAMETERS {angstrom}
+4.5937 0.0 0.0
+0.0 4.5937 0.0
+0.0 0.0 2.9587
+ATOMIC_SPECIES
+ Ti 47.867 Ti_ONCV_PBE-1.2.upf
+ O 15.999 O_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS {angstrom}
+Ti 0.0 0.0 0.0
+Ti 2.29685 2.29685 1.47935
+O 1.400067886 1.400067886 0.0
+O 3.1936321139999997 3.1936321139999997 0.0
+O 3.6969178860000005 0.8967821140000001 1.47935
+O 0.8967821140000001 3.6969178860000005 1.47935
+K_POINTS {automatic}
+<nk1> <nk2> <nk3> 0 0 0

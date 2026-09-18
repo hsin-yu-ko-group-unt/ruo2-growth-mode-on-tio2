@@ -1,0 +1,13 @@
+Loading compiler version 2022.2.1
+Loading tbb version 2021.7.1
+Loading compiler-rt version 2022.2.1
+Loading oclfpga version 2022.2.1
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+Loading mkl version 2022.2.1
+Loading mpi version 2021.7.1
+
+Loading QE/7.1/imkl_impi
+  Loading requirement: INTEL/tbb/2021.7.1 INTEL/compiler-rt/2022.2.1
+    INTEL/oclfpga/2022.2.1 INTEL/compiler/2022.2.1 INTEL/mkl/2022.2.1
+    INTEL/mpi/2021.7.1 git/2.33.1

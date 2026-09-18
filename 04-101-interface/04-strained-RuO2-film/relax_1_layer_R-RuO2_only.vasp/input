@@ -1,0 +1,49 @@
+&CONTROL
+   calculation      = 'relax'
+   nstep            = 500
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './Out'
+   pseudo_dir       = '/cm/shared/apps/KO/pseudo/sg15'
+/
+&SYSTEM
+   ecutwfc          = 120
+   occupations      = 'smearing'
+   degauss          = 0.02
+   ntyp             = 2
+   nat              = 6
+   ibrav            = 0
+/
+&ELECTRONS
+   electron_maxstep = 200
+   mixing_beta      = 0.4
+   mixing_ndim      = 20
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+O 15.999 O_ONCV_PBE-1.2.upf
+Ru 101.07 Ru_ONCV_PBE-1.2.upf
+
+K_POINTS automatic
+3 3 1  0 0 0
+
+CELL_PARAMETERS angstrom
+5.46406316760000 0.00000000000000 0.00000000000000
+0.00000000000000 4.59369993210000 0.00000000000000
+0.00000000000000 0.00000000000000 21.47127824320000
+
+ATOMIC_POSITIONS angstrom
+O 2.6309367919 3.2429641653 10.0000000000  
+O 5.3629687009 3.6475849117 10.0000000000  
+O 4.9595785391 1.3599426841 11.4712782432  
+O 2.2275471181 0.9369072139 11.4712770022  
+Ru 3.8466633349 -0.1617014744 10.7441317087  
+Ru 1.1146319139 2.4585511664 10.7441317087  
+

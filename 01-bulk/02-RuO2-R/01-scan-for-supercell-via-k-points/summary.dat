@@ -1,0 +1,28 @@
+target_convergence ~= 0.000360219 Ry in the total energy
+-- scan for nk1,nk2 convergence --
+kpoints-3-3-15/output:!    total  energy  =  -504.89363517  Ry
+kpoints-4-4-15/output:!    total  energy  =  -504.89489550  Ry
+kpoints-5-5-15/output:!    total  energy  =  -504.89647139  Ry
+kpoints-6-6-15/output:!    total  energy  =  -504.89672519  Ry
+kpoints-7-7-15/output:!    total  energy  =  -504.89691253  Ry
+kpoints-8-8-15/output:!    total  energy  =  -504.89704711  Ry
+kpoints-9-9-15/output:!    total  energy  =  -504.89709885  Ry
+kpoints-10-10-15/output:!  total  energy  =  -504.89706393  Ry
+kpoints-11-11-15/output:!  total  energy  =  -504.89719992  Ry
+Found that nk1 = nk2 = 6 is sufficiently converged
+------------------------------
+-- scan for nk3 convergence --
+kpoints-11-11-5/output:!   total  energy  =  -504.89710699  Ry
+kpoints-11-11-6/output:!   total  energy  =  -504.89648961  Ry
+kpoints-11-11-7/output:!   total  energy  =  -504.89736596  Ry
+kpoints-11-11-8/output:!   total  energy  =  -504.89709950  Ry
+kpoints-11-11-9/output:!   total  energy  =  -504.89700907  Ry
+kpoints-11-11-10/output:!  total  energy  =  -504.89728315  Ry
+kpoints-11-11-11/output:!  total  energy  =  -504.89718733  Ry
+kpoints-11-11-12/output:!  total  energy  =  -504.89720125  Ry
+kpoints-11-11-13/output:!  total  energy  =  -504.89725637  Ry
+kpoints-11-11-14/output:!  total  energy  =  -504.89722676  Ry
+kpoints-11-11-15/output:!  total  energy  =  -504.89719992  Ry
+Found that nk3 = 8 should be sufficiently converged
+------------------------------
+summary: chosen a 6 x 6 x 8 supercell

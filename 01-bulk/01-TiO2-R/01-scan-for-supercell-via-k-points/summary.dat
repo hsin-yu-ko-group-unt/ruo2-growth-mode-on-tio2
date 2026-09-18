@@ -1,0 +1,20 @@
+target_convergence ~= 0.000360219 Ry in the total energy
+-- scan for nk1,nk2 convergence --
+kpoints-1-1-7/output:!    total energy              =    -359.20515648 Ry
+kpoints-2-2-7/output:!    total energy              =    -359.24521470 Ry
+kpoints-3-3-7/output:!    total energy              =    -359.24850027 Ry
+kpoints-4-4-7/output:!    total energy              =    -359.24892109 Ry
+kpoints-5-5-7/output:!    total energy              =    -359.24853405 Ry
+Found that nk1 = nk2 = 3 is sufficiently converged
+------------------------------
+-- scan for nk3 convergence --
+kpoints-5-5-1/output:!    total energy              =    -359.11126910 Ry
+kpoints-5-5-2/output:!    total energy              =    -359.22319585 Ry
+kpoints-5-5-3/output:!    total energy              =    -359.24509520 Ry
+kpoints-5-5-4/output:!    total energy              =    -359.24802020 Ry
+kpoints-5-5-5/output:!    total energy              =    -359.24876281 Ry
+kpoints-5-5-6/output:!    total energy              =    -359.24881702 Ry
+kpoints-5-5-7/output:!    total energy              =    -359.24853405 Ry
+Found that nk3 = 5 should be sufficiently converged
+------------------------------
+summary: chosen a 3 x 3 x 5 supercell

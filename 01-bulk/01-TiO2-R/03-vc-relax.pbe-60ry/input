@@ -1,0 +1,34 @@
+&control
+   calculation = 'vc-relax'
+   pseudo_dir  = './'
+   disk_io     = "none"
+   tprnfor = .true.
+/
+&system
+   ibrav     = 0
+   nat       = 6 
+   ntyp      = 2
+   ecutwfc   = 60
+/
+&electrons
+/
+&ions
+/
+&cell
+/
+CELL_PARAMETERS {angstrom}
+   4.627564750   0.000000000   0.000000000
+   0.000000000   4.627564750   0.000000000
+   0.000000000   0.000000000   2.960985622
+ATOMIC_SPECIES
+ Ti 47.867 Ti_ONCV_PBE-1.2.upf
+ O 15.999 O_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS {angstrom}
+Ti            0.0000000000        0.0000000000        0.0000000000
+Ti            2.3137823750        2.3137823750        1.4804928112
+O             1.4097749382        1.4097749382        0.0000000000
+O             3.2177898119        3.2177898119        0.0000000000
+O             3.7235573132        0.9040074369        1.4804928112
+O             0.9040074369        3.7235573132        1.4804928112
+K_POINTS {automatic}
+3 3 5 0 0 0

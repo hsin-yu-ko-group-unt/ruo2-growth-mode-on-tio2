@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH -e _slurm-%j.out
+#SBATCH -o _slurm-%j.out
+#SBATCH --ntasks-per-node=1        ## Number of tasks per node
+#SBATCH --cpus-per-task=8          ## Number of cpus used per task
+#SBATCH --gpus-per-task=1          ## Number of cpus used per task
+#SBATCH --nodes=1                  ## Number of nodes to be used
+#SBATCH -p share.gpu
+# SBATCH -p test.gpu
+#SBATCH -t 6:00:00
+# SBATCH --nice=10000
+#SBATCH --gres-flags=enforce-binding
+
+source ~/grp-apps/venv/deepmd-kit/bin/activate 
+python 02-convert-vasp-to-pw.py
+deactivate
+
+CONTAINER_f=/cm/shared/apps/KO/containers/q-e.krg.prod_cu124_O2.sif  # same source as q-e.krg.dev.sea-vc_cu124.sif but more stable compilation flags (no "-fast" but "-O2")
+module load apptainer
+apptainer exec -B /cm/shared -B /storage/nas_scr/ --nv $CONTAINER_f pw.x < input > output
